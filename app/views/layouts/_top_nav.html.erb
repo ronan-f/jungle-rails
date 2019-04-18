@@ -25,6 +25,26 @@
             <% end %>
           </ul>
         </li>
+        <% if current_user %>
+          <li>
+            <%= link_to 'Log Out', logout_path, method: :delete %>
+          </li>
+          <li>
+            <%= "Logged in as #{current_user.email}" %>
+          </li>
+
+        <% else %>
+          <li>
+            <%= link_to 'Log In', login_path %>
+          </li>
+          <li>
+            <%= link_to 'Register', new_user_path %>
+          </li>
+        <% end %>
+
+
+
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
