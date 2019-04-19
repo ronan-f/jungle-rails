@@ -1,0 +1,10 @@
+<div class="col-sm-8">
+<dl class="dl-horizontal">
+  <dt id="review-title"><%="Review number: #{review.id}"%></dt>
+  <dd><%= review.description %></dd>
+  <dt>Rating</dt>
+  <dd><%= review.rating %> / 5</dd>
+  <dt>Author</dt>
+  <dd><%= User.find_by(id: review.user_id).email %></dd>
+</dl>
+</div>

@@ -24,6 +24,22 @@
           <dd><%= @product.price %></dd>
         </dl>
       </div>
+      <%if @product.reviews.length > 0 %>
+        <div class="col-sm-8">
+          <dl class="dl-horizontal">
+            <h4 id='reviews-header'> Reviews </h4>
+            <% @product.reviews.each do |review| %>
+              <%= render 'review', review: review %>
+            <% end %>
+          </dl>
+        </div>
+      <% else %>
+          <div>
+          <h4 id="not-reviewed">This product has not been reviewed yet </h4>
+          <div>
+
+      <% end %>
+
     </div>
 
   </article>

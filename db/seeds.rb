@@ -132,5 +132,31 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+puts "Adding reviews"
+
+Review.destroy_all
+
+Review.create!({
+  product_id: 2,
+  user_id: 1,
+  description: Faker::Hipster.paragraph(1),
+  rating: 3
+})
+
+Review.create!({
+  product_id: 2,
+  user_id: 1,
+  description: Faker::Hipster.paragraph(1),
+  rating: 1
+
+})
+
+Review.create!({
+  product_id: 2,
+  user_id: 1,
+  description: Faker::Hipster.paragraph(1),
+  rating: 2
+})
+
 
 puts "DONE!"
