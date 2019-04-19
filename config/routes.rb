@@ -13,6 +13,11 @@ Rails.application.routes.draw do
   resources :orders, only: [:create, :show]
 
 
+  resources :products do
+    resources :reviews, only: [:create]
+  end
+
+
   get 'users/new' => 'users#new', as: :new_user
   post 'users' => 'users#create'
   get '/login'     => 'sessions#new'

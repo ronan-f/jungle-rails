@@ -22,8 +22,25 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
-        </dl>
+          <dt>New Review</dt>
+          <dd>
+          <%= form_for [@product, @review] do |form| %>
+            <p>
+            <%= form.text_area :description %>
+          </p>
+            <p>
+            <%= form.label :rating %>
+            <%= form.select :rating, [['Horrible', 1], ['Poor', 2], ['Mediocre', 3], ['Good', 4], ['Great', 5]] %>
+            </p>
+            <p><%= form.submit %></p>
+          <% end%>
+        </dd>
+
+
       </div>
+
+
+
       <%if @product.reviews.length > 0 %>
         <div class="col-sm-8">
           <dl class="dl-horizontal">
