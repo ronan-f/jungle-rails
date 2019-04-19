@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h4> Your Jungle order is complete </h4>
+    <h4>Ordered products:</h4>
+    <% @order.line_items.each do |item| %>
+
+    <p>Product: <%= item.product.name %></p>
+
+    <p><%= item.product.description %></p>
+    <p>Unit Price :<%= item.product.price %></p>
+    <p>Quantity :<%= item.quantity %></p>
+    <p>Price : <%= item.total_price %></p>
+    <tr>
+      <th colspan="4">
+        TOTAL:
+      </th>
+      <th>
+      <%= @order.total %>
+    </th>
+  </tr>
+    <% end %>
+  </body>
+</html>

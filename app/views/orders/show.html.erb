@@ -1,6 +1,7 @@
 <section class="orders-show">
   <header class="page-header">
     <h1>Order <%= @order.id %></h1>
+    <h4> Your email: <%= User.find_by(id: session[:user_id]).email %> </h4>
   </header>
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>

@@ -7,6 +7,7 @@
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
+        <% if cart.keys.length > 0 %>
         <tr>
           <th colspan="2">Product</th>
           <th>Unit Price</th>
@@ -47,6 +48,10 @@
         </script>
       <% end %>
     </div>
+    <% else %>
+        <h4> Please add items to checkout... </h4>
+        <%= link_to 'Return to products', :root, class: 'btn btn-info' %>
+    <% end %>
   </div>
 
 </section>
