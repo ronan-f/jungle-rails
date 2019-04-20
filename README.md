@@ -6,7 +6,7 @@ Jungle is amini e-commerce application built with Rails 4.2 to practice working 
 
 ### Homepage
 
-!['Screenshot of homepage'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.35.08%20PM.png?raw=true)
+!['Screenshot of homepage'](https://github.com/ronan-f/jungle-rails/blob/master/docs/update%20homepage.png?raw=true)
 
 ### Sold Out Items
 
