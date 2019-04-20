@@ -1,6 +1,6 @@
 # Jungle
 
-Jungle is amini e-commerce application built with Rails 4.2 to practice working with different technologies.
+Jungle is a mini e-commerce application built with Rails 4.2 to practice working with different technologies.
 
 ## Final product
 
