@@ -5,6 +5,10 @@
   <dt>Rating</dt>
   <dd><%= review.rating %> / 5</dd>
   <dt>Author</dt>
-  <dd><%= User.find_by(id: review.user_id).email %></dd>
+  <% author = User.find_by(id: review.user_id).email %>
+  <dd><%= author %></dd>
+  <% if author == current_user.email %>
+  <dt><%= link_to 'Delete Review', [@product, review], method: :delete%></dt>
+  <% end %>
 </dl>
 </div>

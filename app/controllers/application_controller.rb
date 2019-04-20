@@ -17,6 +17,12 @@ class ApplicationController < ActionController::Base
       user == USER && password == PASSWORD
   end
 
+  def check_if_user
+    if !current_user
+      redirect_to '/login'
+    end
+  end
+
   end
 
   def cart
