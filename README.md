@@ -1,6 +1,34 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+Jungle is amini e-commerce application built with Rails 4.2 to practice working with different technologies.
+
+## Final product
+
+### Homepage
+
+!['Screenshot of homepage'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.35.08%20PM.png?raw=true)
+
+### Sold Out Items
+
+!['Sold out'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.35.08%20PM.png?raw=true)
+
+### Reviews and Description
+
+#### Users can add new reviews, view previous reviews and delete any reviews they have created
+
+!['Reviews'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.35.34%20PM.png?raw=true)
+
+### Admin view
+
+!['Admin'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.35.48%20PM.png?raw=true)
+
+### Cart view
+
+!['Cart view'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.36.06%20PM.png?raw=true)
+
+### Order confirmation
+
+!['Order confimation'](https://github.com/ronan-f/jungle-rails/blob/master/docs/Screen%20Shot%202019-04-19%20at%205.36.29%20PM.png?raw=true)
 
 
 ## Setup
